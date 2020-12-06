@@ -1,6 +1,6 @@
 <template>
 	<div class="alert alert-snackbar" role="alert" id="errorAlert" v-show="isVisible">
-		<button type="button" class="close" aria-label="Close" v-on:click="handleCloseClick">
+		<button type="button" class="close" aria-label="Close" @click="handleCloseClick">
 			<span aria-hidden="true">&times;</span>
 		</button>
 		<div class="alert-snackbar-text">{{ text }}</div>

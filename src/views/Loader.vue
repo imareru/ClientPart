@@ -9,14 +9,14 @@
 	export default {
 		mounted() {
 			this.$nextTick(async () => {
-				await this.getRssItems();
+				await this.initialize();
 				await wait(1500);
-				this.$router.push({name: "app"});
+				await this.$router.push({name: "app"});
 			});
 		},
 		methods: {
 			...mapActions([
-				'getRssItems'
+				'initialize'
 			])
 		}
 	}
