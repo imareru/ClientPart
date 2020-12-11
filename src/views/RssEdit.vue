@@ -50,6 +50,7 @@
 				const date = new Date(this.rssItem.date);
 				this.title = this.rssItem.title;
 				this.link = this.rssItem.link;
+				this.source = this.rssItem.source;
 				this.visibleDate = formatInputDate(date);
 				this.visibleTime = formatInputTime(date);
 			}
