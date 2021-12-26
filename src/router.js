@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './views/App';
 import Loader from "./views/Loader";
+import Adminka from "./views/Adminka";
 import RegionList from "./views/RegionList";
 import RegionEdit from "./views/RegionEdit";
 import BuyerList from "./views/buyer/BuyerList";
@@ -12,6 +13,7 @@ export default new VueRouter({
 	mode: 'history',
 	routes: [
 		{ path: "/", name: "loader", component: Loader },
+		{path: "/", name: "adminka", component: Adminka},
 		{ path: "/app", component: App, children: [
 				// { path: "/", name: "app", component: RegionList },
 				// { path: "/:id", name: "edit", component: RegionEdit }
