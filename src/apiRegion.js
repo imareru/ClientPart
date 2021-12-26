@@ -2,8 +2,8 @@ import { apiUrl } from "./config";
 import axios from "axios";
 
 export default {
-	rssItem: {
-		resourceUrl: "rssitem",
+	regionItem: {
+		resourceUrl: "region",
 		getAll() {
 			return axios({
 				url: `${apiUrl}/${this.resourceUrl}`,

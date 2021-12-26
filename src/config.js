@@ -14,4 +14,6 @@ export const sources = {
 	3: "Бизнес Online"
 };
 
-export const apiUrl = isProduction ? "http://rssapi.cleverfox.space/api" : "http://localhost:5000/api";
+
+
+export const apiUrl = isProduction ? "http://rssapi.cleverfox.space/" : "http://127.0.0.1:8080";

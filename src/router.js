@@ -2,8 +2,10 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from './views/App';
 import Loader from "./views/Loader";
-import RssList from "./views/RssList";
-import RssEdit from "./views/RssEdit";
+import RegionList from "./views/RegionList";
+import RegionEdit from "./views/RegionEdit";
+import BuyerList from "./views/buyer/BuyerList";
+import BuyerEdit from "./views/buyer/BuyerEdit";
 
 Vue.use(VueRouter);
 export default new VueRouter({
@@ -11,8 +13,10 @@ export default new VueRouter({
 	routes: [
 		{ path: "/", name: "loader", component: Loader },
 		{ path: "/app", component: App, children: [
-				{ path: "/", name: "app", component: RssList },
-				{ path: "/:id", name: "edit", component: RssEdit }
+				// { path: "/", name: "app", component: RegionList },
+				// { path: "/:id", name: "edit", component: RegionEdit }
+				{ path: "/", name: "app", component: BuyerList },
+				{ path: "/:id", name: "edit", component: BuyerEdit }
 		]}
 	]
 });
